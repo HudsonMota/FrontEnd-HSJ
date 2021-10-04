@@ -1,0 +1,60 @@
+/* Navbar */
+
+.navbar {
+    min-height: auto;
+    background-color: #58AF9C;
+}
+
+.logo {
+    width: 85px;
+    height: 85px;
+    margin-right: auto;
+    margin-left: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: solid 2.5px white;
+    background-color: #58AF9C;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.logout {
+    margin-top: 0px;
+    color: white;
+}
+
+.sair {
+    background-color: transparent;
+    border: #58AF9C;
+    font-size: 23px;
+}
+
+.sair:hover {
+    background-color: #58AF9C;
+    color: #2f554d;
+}
+
+/* /Navbar */
+
+/* Body */
+
+.body {
+    min-height: 620px;
+}
+
+/* /Body */
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 242, 242);
+    color: black;
+    min-height: 170px;
+}
+
+/* /Footer */

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,400&display=swap">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- /Favicon -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- /Bootstrap -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- /CSS -->
+
+    <title>Atualização de Pacientes</title>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+
+        <!-- Logo -->
+        <a href="home.html">
+            <img class="logo" src="./img/BoxesB.png" alt="Boxes" />
+        </a>
+        <!-- Logout -->
+        <div class="logout">
+            <!-- Button -->
+            <button class="btn btn-primary sair">
+                Sair &nbsp;<i class="fas fa-door-open"></i>
+            </button>
+        </div>
+
+    </div>
+    <!-- /Navbar -->
+
+    <!-- Body -->
+    <div class="body text-center">
+        <h1 style="margin-top: 12px; font-size: 34px;">Atualização de Dados de Pacientes</h1>
+        <!-- /Body -->
+
+        <div class="areaCadastro">
+            <form class="formCadastro" action="home.html" method="post">
+
+                <!-- ================================================ DADOS PESSOAIS ==================================================================== -->
+                <fieldset>
+
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <h4 style="margin-top: 30px; margin-bottom: 20px;">
+                                    Dados Pessoais
+                                </h4>
+                            </tr>
+                        </thead>
+                        <tr class=" areaForm text-center">
+                            <td class="text-center">
+                                <label for="nome">Nome: </label>
+                            </td>
+                            <td class="formulario text-center">
+                                <input type="text" class="form-control" name="nome">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="sobrenome">Sobrenome: </label>
+                            </td>
+                            <td class="formulario">
+                                <input type="text" class="form-control" name="sobrenome">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Data de Nascimento: </label>
+                            </td>
+                            <td class="formulario">
+                                <input type="date" class="form-control col-sm-2 col-form-label">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Contato: </label>
+                            </td>
+                            <td class="formulario">
+                                <input type="tel" id="contato" name="contato" size="2" maxlength="2">
+                                <input type="tel" id="contato" name="contato" size="9" maxlength="9">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <br />
+                <!-- ================================================ ENDEREÇO ==================================================================== -->
+                <fieldset>
+
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <h4 style="margin-top: 20px; margin-bottom: 20px;">
+                                    Dados do Endereço
+                                </h4>
+                            </tr>
+                        </thead>
+
+                        <tr>
+                            <td>
+                                <label for="rua">Rua:</label>
+                            </td>
+                            <td class="formulario">
+                                <input type="text" class="form-control" name="rua">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="numero">Numero:</label>
+                            </td>
+                            <td class="formulario">
+                                <input type="number" class="form-control" id="Número" name="numero" size="4">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="bairro">Bairro: </label>
+                            </td>
+                            <td class="formulario">
+                                <input type="text" class="form-control" name="bairro">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="estado">Estado:</label>
+                            </td>
+                            <td class="formulario">
+                                <select name="estado" class="form-control" id="estados">
+                                    <option value="">...</option>
+                                    <option value="ac">Acre</option>
+                                    <option value="al">Alagoas</option>
+                                    <option value="am">Amazonas</option>
+                                    <option value="ap">Amapá</option>
+                                    <option value="ba">Bahia</option>
+                                    <option value="ce">Ceará</option>
+                                    <option value="df">Distrito Federal</option>
+                                    <option value="es">Espírito Santo</option>
+                                    <option value="go">Goiás</option>
+                                    <option value="ma">Maranhão</option>
+                                    <option value="mt">Mato Grosso</option>
+                                    <option value="ms">Mato Grosso do Sul</option>
+                                    <option value="mg">Minas Gerais</option>
+                                    <option value="pa">Pará</option>
+                                    <option value="pb">Paraíba</option>
+                                    <option value="pr">Paraná</option>
+                                    <option value="pe">Pernambuco</option>
+                                    <option value="pi">Piauí</option>
+                                    <option value="rj">Rio de Janeiro</option>
+                                    <option value="rn">Rio Grande do Norte</option>
+                                    <option value="ro">Rondônia</option>
+                                    <option value="rs">Rio Grande do Sul</option>
+                                    <option value="rr">Roraima</option>
+                                    <option value="sc">Santa Catarina</option>
+                                    <option value="se">Sergipe</option>
+                                    <option value="sp">São Paulo</option>
+                                    <option value="to">Tocantins</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="cidade">Cidade: </label>
+                            </td>
+                            <td class="formulario">
+                                <input type="text" class="form-control" name="cidade">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="cep">CEP: </label>
+                            </td>
+                            <td class="formulario">
+                                <input type="text" id="cep" name="cep" size="5" maxlength="5">
+                                -
+                                <input type="text" id="cep" name="cep2" size="3" maxlength="3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <br />
+                <!-- ================================================ DADOS ACOMPANHANTE ==================================================================== -->
+                <fieldset>
+
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <h4 style="margin-top: 30px; margin-bottom: 20px;">
+                                    Dados do Acompanhante
+                                </h4>
+                            </tr>
+                        </thead>
+                        <tr class=" areaForm text-center">
+                            <td class="text-center">
+                                <label for="nome">Nome: </label>
+                            </td>
+                            <td class="formulario text-center">
+                                <input type="text" class="form-control" name="nome">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="sobrenome">Sobrenome: </label>
+                            </td>
+                            <td class="formulario">
+                                <input type="text" class="form-control" name="sobrenome">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Data de Nascimento: </label>
+                            </td>
+                            <td class="formulario">
+                                <input type="date" class="form-control col-sm-2 col-form-label">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Contato: </label>
+                            </td>
+                            <td class="formulario">
+                                <input type="tel" id="contato" name="contato" size="2" maxlength="2">
+                                <input type="tel" id="contato" name="contato" size="9" maxlength="9">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <br />
+
+                <input type="reset" class="btn btn-light text-center" value="Limpar">
+                <input type="submit" class="btn btn-primary text-center" value="Atualizar">
+            </form>
+        </div>
+        <!-- /Body -->
+
+        <!--JQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="jquery.includeHTML.min.js"></script>
+        <!-- /JQuery -->
+
+        <!-- FontAwesome(ICONS) -->
+        <script src="https://kit.fontawesome.com/12b8c7ca16.js" crossorigin="anonymous"></script>
+        <!-- /FontAwesome(ICONS) -->
+
+
+        <!-- Footer -->
+        <footer style="margin-top: 20px;">
+            <p class="footer text-center">
+                &copy; 2021 - Todos os direitos reservados
+                <br>
+                Hospital São José
+            </p>
+        </footer>
+        <!-- /Footer -->
+
+</body>
+
+<style scoped>
+    .formCadastro {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-control {
+        width: 855px;
+        height: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #estados {
+        width: 685px;
+    }
+
+    #cpf {
+        height: 36px;
+    }
+
+    .btn-primary {
+        border-color: black;
+    }
+
+    .btn-light {
+        border-color: black;
+    }
+</style>
